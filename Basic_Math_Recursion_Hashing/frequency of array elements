@@ -1,0 +1,29 @@
+class Solution {
+public:
+    vector<vector<int>> countFreq(vector<int>& arr) {
+        
+        int n = arr.size(), temp, count;
+        vector<vector<int>> v;
+        vector<int> visited(n, 0);
+
+        for(int i = 0; i < n; i++) {
+            
+            if(visited[i] == 1)
+                continue;
+
+            temp = arr[i];
+            count = 1;
+            visited[i] = 1;
+
+            for(int j = i + 1; j < n; j++) {
+                if(temp == arr[j] && visited[j] == 0) {
+                    visited[j] = 1;
+                    count++;
+                }
+            }
+            v.push_back({temp, count});
+        }
+
+        return v;
+    }
+};
