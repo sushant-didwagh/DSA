@@ -29,3 +29,9 @@ int main() {
 
     return 0;
 }
+
+
+
+
+//text
+compare two nearest element and swap if next element is smaller than given. mean in first swap the largest element is goes on it's correct position, incremently check untill swaping is not stop.
