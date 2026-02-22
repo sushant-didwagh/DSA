@@ -16,3 +16,7 @@ class Solution {
         }
     }
 };
+
+
+//text
+compare each index element with all other index element and swap if is greter than others.
